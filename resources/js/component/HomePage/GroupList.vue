@@ -1,33 +1,28 @@
-<script setup>
-        defineProps({
-            image: {
-                type: String,
-            },
-            Title: {
-                type: String,
-            },
-            Description: {
-                type: String,
-            },
-        });
+
+<script>
+
+import {defineComponent} from "vue";
+import GroupItem from "@/component/HomePage/GroupItem.vue";
+
+export default defineComponent({
+    components: {GroupItem}
+})
 </script>
-
 <template>
-    <div class="flex items-start  cursor-pointer hover:bg-gray-300 ">
-        <div class="">
-            <img class="lg:w-[80px] sm:w-full rounded-full" :src="image">
-        </div>
-        <div class="">
-            <h2 class="text-[25px] font-bold">
-                {{Title}}
-            </h2>
-            <p class="text-[15px]">
-               {{Description}}
-            </p>
-        </div>
-    </div>
-</template>
+    <GroupItem
+        image="/image/avatar1.jpg"
+        Title="Tiêu đề 1"
+        Description="Lorem ipsum dolor sit amet consectetur adipiscing elit ad at risus,
+               facilisis fermentum "
+    ></GroupItem>
 
+    <GroupItem
+        image="/image/avatar1.jpg"
+        Title="Tiêu đề 2"
+        Description="Lorem ipsum dolor sit amet consectetur adipiscing elit ad at risus,
+                      facilisis fermentum"
+    ></GroupItem>
+</template>
 <style scoped>
 
 </style>
