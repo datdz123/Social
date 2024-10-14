@@ -16,7 +16,7 @@ defineProps({
 
     <div class="flex items-center  cursor-pointer hover:bg-gray-300 mb-5 mt-5">
         <div class="">
-            <img class="lg:w-[80px] sm:w-[60px] rounded-full" :src="image">
+            <img class="sm:w-[60px] rounded-full" :src="image">
         </div>
         <div class="">
             <h2 class="text-[25px] sm:text-[18px] font-bold">

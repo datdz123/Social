@@ -13,8 +13,8 @@ function toggleCreatePost() {
 </script>
 
 <template>
-    <div   class=" p-5 mt-3 text-gray-400">
-        <div @click="toggleCreatePost" class="border-gray-200 border p-3">
+    <div class=" p-5  text-gray-400 rounded-l-md bg-white">
+        <div @click="toggleCreatePost" class="border-gray-200 border  p-3">
             Click here to create new post
         </div>
     </div>
